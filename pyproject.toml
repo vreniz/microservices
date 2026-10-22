@@ -1,0 +1,24 @@
+[project]
+name = "user-service"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vreniz", email = "vreniz@uninorte.edu.co" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi[standard]>=0.156.8",
+    "psycopg>=3.3.6",
+    "psycopg-binary>=3.3.6",
+    "python-dotenv>=1.2.4",
+    "sqlmodel>=0.0.48",
+]
+
+[project.scripts]
+user-service = "user_service:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
