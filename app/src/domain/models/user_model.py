@@ -10,6 +10,6 @@ class User(SQLModel, table=True):
     identification_number: str
     birth_date: datetime.date
     is_active: bool = True
-    is_superuser: bool = False
+
 
     __tablename__ = "usr_users"
